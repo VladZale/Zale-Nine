@@ -1,0 +1,44 @@
+$size: 3;
+$color: white;
+
+@keyframes mouse-scroll {
+	0%   { opacity: 0  }
+	50%  { opacity: 1  }
+	100% { opacity: .5 }
+}
+
+.wrapper {
+	.scroll-animation {
+	position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+		.arrows {
+			transform: rotate(180deg);
+			.first {
+				animation-delay: .3s;
+			}
+
+			.second {
+				animation-delay: .2s;
+			}
+
+			.third {
+				animation-delay: .1s;
+			}
+
+			span {
+				width: 6px * $size;
+				height: 6px * $size;
+				border-right: 3px solid $color;
+				border-bottom: 3px solid $color;
+				transform: rotate(225deg);
+				display: block;
+				margin: 0 auto;
+				border-radius: 2px;
+				animation: mouse-scroll 2s infinite;
+			}
+		}
+	}
+}
