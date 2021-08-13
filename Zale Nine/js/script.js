@@ -40,37 +40,37 @@ startBtn = document.querySelector(".myBtn");
 
 introTl = gsap.timeline();
 
+introTl.to(".logo path:nth-child(1)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(2)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(3)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(4)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(5)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(6)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(7)",{
+    animationPlayState: "running"
+})
+introTl.to(".logo path:nth-child(8)",{
+    animationPlayState: "running"
+})
+
+introTl.to(".logo",{
+    delay:0.3,
+    animationPlayState: "running"
+})
+
 window.addEventListener('load', () => {
-    introTl.to(".logo path:nth-child(1)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(2)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(3)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(4)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(5)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(6)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(7)",{
-        animationPlayState: "running"
-    })
-    introTl.to(".logo path:nth-child(8)",{
-        animationPlayState: "running"
-    })
-
-    introTl.to(".logo",{
-        delay:0.3,
-        animationPlayState: "running"
-    })
-
     gsap.from(startBtn,{
         delay:.5,
         visibility: "hiden",
